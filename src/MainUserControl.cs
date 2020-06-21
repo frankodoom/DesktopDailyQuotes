@@ -20,7 +20,7 @@ namespace DailyMotivation
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
-
+            lb_quote.Text = "This is a sample quote by Nobody";
         }
     }
 }

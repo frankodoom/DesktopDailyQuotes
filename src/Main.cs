@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DailyQuotes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,11 +14,12 @@ namespace DailyMotivation
 {
     public partial class Main : Form
     {
+
         public Main()
         {
             InitializeComponent();
-            this.BackColor = Color.LimeGreen;
-            this.TransparencyKey = Color.LimeGreen;
+            InitializeDesktop();
+  
             
    
         }
@@ -40,5 +42,17 @@ namespace DailyMotivation
             e.Graphics.FillRectangle(Brushes.LimeGreen, e.ClipRectangle);
         }
 
+        private void DisplayPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void InitializeDesktop()
+        {
+            this.BackColor = Color.LimeGreen;
+            this.TransparencyKey = Color.LimeGreen;
+            this.ShowInTaskbar = false;
+
+        }
     }
 }

@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_quote = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // lb_quote
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2435, 297);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(637, 91);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Hello Information";
+            this.lb_quote.AutoSize = true;
+            this.lb_quote.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_quote.Location = new System.Drawing.Point(1899, 295);
+            this.lb_quote.Name = "lb_quote";
+            this.lb_quote.Size = new System.Drawing.Size(205, 91);
+            this.lb_quote.TabIndex = 0;
+            this.lb_quote.Text = "label";
+            this.lb_quote.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // UserControl1
+            // MainUserControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.label1);
-            this.Name = "UserControl1";
+            this.Controls.Add(this.lb_quote);
+            this.Name = "MainUserControl";
             this.Size = new System.Drawing.Size(4843, 3073);
             this.Load += new System.EventHandler(this.UserControl1_Load);
             this.ResumeLayout(false);
@@ -58,6 +59,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_quote;
     }
 }

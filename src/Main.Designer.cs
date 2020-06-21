@@ -38,7 +38,7 @@
             this.DisplayPanel.Name = "DisplayPanel";
             this.DisplayPanel.Size = new System.Drawing.Size(3236, 1836);
             this.DisplayPanel.TabIndex = 0;
-            this.DisplayPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.DisplayPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.DisplayPanel_Paint);
             // 
             // Main
             // 

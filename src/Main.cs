@@ -18,9 +18,7 @@ namespace DailyMotivation
         public Main()
         {
             InitializeComponent();
-            InitializeDesktop();
-  
-            
+            InitializeDesktop();  
    
         }
 

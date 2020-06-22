@@ -19,6 +19,7 @@ namespace DailyQuotes
                 Icon = Resources.sample_logo,
                 Text ="Daily Quotes",
                 ContextMenu = new ContextMenu(new MenuItem[] {
+                new MenuItem("Refresh",Refresh),
                 new MenuItem("About", About),
                 new MenuItem("Exit", Exit),
           
@@ -29,6 +30,11 @@ namespace DailyQuotes
             //Start Quotes Window
             var main = new Main();
             main.Show();
+        }
+
+        private void Refresh(object sender, EventArgs e)
+        {
+            ///TODO implement change current quote
         }
 
         private void About(object sender, EventArgs e)

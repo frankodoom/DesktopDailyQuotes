@@ -41,6 +41,9 @@
             this.lb_quote.TabIndex = 0;
             this.lb_quote.Text = "label";
             this.lb_quote.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lb_quote.MouseDown += new System.Windows.Forms.MouseEventHandler(this.lb_quote_Dragger_MouseDown);
+            this.lb_quote.MouseMove += new System.Windows.Forms.MouseEventHandler(this.lb_quote_MouseMove);
+            this.lb_quote.MouseUp += new System.Windows.Forms.MouseEventHandler(this.lb_quote_MouseUp);
             // 
             // MainUserControl
             // 
@@ -59,6 +62,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lb_quote;
+        public System.Windows.Forms.Label lb_quote;
     }
 }

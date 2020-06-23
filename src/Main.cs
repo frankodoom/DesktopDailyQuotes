@@ -52,5 +52,8 @@ namespace DailyMotivation
             this.ShowInTaskbar = false;
 
         }
+
+
+
     }
 }

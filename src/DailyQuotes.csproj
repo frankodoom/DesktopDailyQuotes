@@ -73,7 +73,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Services\Interface\INetworkService.cs" />
     <Compile Include="Services\Interface\IQuoteService.cs" />
+    <Compile Include="Services\Provider\NetworkService.cs" />
     <Compile Include="Services\Provider\QuoteService.cs" />
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>

@@ -70,11 +70,29 @@ namespace DailyQuotes {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://www.bing.com.
+        /// </summary>
+        internal static string bingUrl {
+            get {
+                return ResourceManager.GetString("bingUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to MIT Licence.
         /// </summary>
         internal static string licence {
             get {
                 return ResourceManager.GetString("licence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string quotesUrl {
+            get {
+                return ResourceManager.GetString("quotesUrl", resourceCulture);
             }
         }
         

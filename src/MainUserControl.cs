@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DailyQuotes.Data;
+using DailyQuotes.Data.Models;
 
 namespace DailyMotivation
 {
@@ -20,8 +22,24 @@ namespace DailyMotivation
 
         private void UserControl1_Load(object sender, EventArgs e)
         {
-            lb_quote.Text = "This is a sample quote by Nobody";
+            lb_quote.Text = "The Quieter You Become, The More You Can Hear - Dam Dass";
+			WrapText(lb_quote, 400, 200);
+			lbAuthor.Visible = false;
+            //lbAuthor.Text = "- Ram Dass";
         }
+
+
+		/// <summary>
+		/// wraps text and autosize 
+		/// </summary>
+		/// <param name="label">label to wrap</param>
+		/// <param name="width">maximum with</param>
+		/// <param name="height">maximum height</param>
+		void WrapText(Label label, int width, int height)
+		{
+			label.MaximumSize = new Size(width, height);
+			label.AutoSize = true;
+		}
 
 		// Keep track of when fake "drag and drop" mode is enabled.
 		private bool isDragging = false;

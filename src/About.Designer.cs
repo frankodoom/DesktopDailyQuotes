@@ -38,9 +38,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::DailyQuotes.Resources.sample_logo1;
-            this.pictureBox1.Location = new System.Drawing.Point(267, 28);
+            this.pictureBox1.Location = new System.Drawing.Point(317, 33);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(166, 155);
+            this.pictureBox1.Size = new System.Drawing.Size(197, 185);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -48,26 +49,29 @@
             // lb_author
             // 
             this.lb_author.AutoSize = true;
-            this.lb_author.Location = new System.Drawing.Point(175, 219);
+            this.lb_author.Location = new System.Drawing.Point(208, 261);
+            this.lb_author.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_author.Name = "lb_author";
-            this.lb_author.Size = new System.Drawing.Size(96, 32);
+            this.lb_author.Size = new System.Drawing.Size(109, 37);
             this.lb_author.TabIndex = 1;
             this.lb_author.Text = "author";
             // 
             // lb_licence
             // 
             this.lb_licence.AutoSize = true;
-            this.lb_licence.Location = new System.Drawing.Point(261, 269);
+            this.lb_licence.Location = new System.Drawing.Point(310, 321);
+            this.lb_licence.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_licence.Name = "lb_licence";
-            this.lb_licence.Size = new System.Drawing.Size(105, 32);
+            this.lb_licence.Size = new System.Drawing.Size(115, 37);
             this.lb_licence.TabIndex = 2;
             this.lb_licence.Text = "licence";
             // 
             // btn_Ok
             // 
-            this.btn_Ok.Location = new System.Drawing.Point(263, 330);
+            this.btn_Ok.Location = new System.Drawing.Point(312, 394);
+            this.btn_Ok.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Ok.Name = "btn_Ok";
-            this.btn_Ok.Size = new System.Drawing.Size(178, 76);
+            this.btn_Ok.Size = new System.Drawing.Size(211, 91);
             this.btn_Ok.TabIndex = 3;
             this.btn_Ok.Text = "Ok";
             this.btn_Ok.UseVisualStyleBackColor = true;
@@ -75,16 +79,17 @@
             // 
             // About
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(19F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(705, 445);
+            this.ClientSize = new System.Drawing.Size(837, 531);
             this.Controls.Add(this.btn_Ok);
             this.Controls.Add(this.lb_licence);
             this.Controls.Add(this.lb_author);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "About";
             this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About";
             this.Load += new System.EventHandler(this.About_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -1,4 +1,6 @@
 ﻿using DailyQuotes;
+using DailyQuotes.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +19,9 @@ namespace DailyMotivation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+         
             Application.Run(new DailyQuotesApplicationContext());
+
         }
     }
 }

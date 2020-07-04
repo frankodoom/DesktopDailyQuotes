@@ -13,7 +13,7 @@ namespace DailyQuotes.Services.Interface
         /// Fetches new Quotes from the Quote Api
         /// </summary>
         /// <returns> Returns IEnumerable<Quotes>  </returns>
-        Task<IEnumerable<Quotes>> FetchQuotesAsync();
+        Task<IEnumerable<Quote>> FetchQuotesAsync();
         /// <summary>
         ///  Persists the newly fetched quotes in the applications Datastore
         /// </summary>
@@ -24,6 +24,6 @@ namespace DailyQuotes.Services.Interface
         /// Manually cycle through the persisted quotes to display on Desktop
         /// </summary>
         /// <returns>Returns a new Quote</returns>
-        Task<Quotes> RefreshQuoteAsync();
+        Task<Quote> RefreshQuoteAsync();
     }
 }

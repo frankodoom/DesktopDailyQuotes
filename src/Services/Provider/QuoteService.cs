@@ -10,11 +10,9 @@ namespace DailyQuotes.Services.Provider
 {
     class QuoteService : IQuoteService
     {
- 
-        public async Task<IEnumerable<Quotes>> FetchQuotesAsync()
+        public Task<IEnumerable<Quote>> FetchQuotesAsync()
         {
-          throw new NotImplementedException();
-
+            throw new NotImplementedException();
         }
 
         public Task<bool> PersistQuotesAsync()
@@ -22,7 +20,7 @@ namespace DailyQuotes.Services.Provider
             throw new NotImplementedException();
         }
 
-        public Task<Quotes> RefreshQuoteAsync()
+        public Task<Quote> RefreshQuoteAsync()
         {
             throw new NotImplementedException();
         }

@@ -1,10 +1,10 @@
 # Daily Quotes
-## This windows application runs in the background and displays famous quotes on your desktop
+### This windows application runs in the background and displays famous quotes on your desktop
 
 <img src="https://github.com/frankodoom/DesktopDailyQuotes/blob/master/screenshots/desktop.png"/>
 
-## Control
-<img src="https://github.com/frankodoom/DesktopDailyQuotes/blob/master/screenshots/tray.png"/>
+##  API
+### This application uses [Quotable](https://github.com/lukePeavey/quotable) an open source quotes api by Luke Peavey
 
 
 

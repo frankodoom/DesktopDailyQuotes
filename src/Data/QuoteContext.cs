@@ -1,12 +1,7 @@
-﻿using DailyQuotes.Data.Dto;
+﻿using DailyQuotes.Data.Model;
 using DailyQuotes.Data.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DailyQuotes.Data
 {
@@ -25,16 +20,19 @@ namespace DailyQuotes.Data
                 catch (Exception ex)
                 {
 
-                    throw ex;
+                    //Debugger.Log(ex);
                 }
                 
             }
         }
+#pragma warning disable S927 // parameter names should match base declaration and other partial definitions
         protected override void OnConfiguring(DbContextOptionsBuilder optionbuilder)
+#pragma warning restore S927 // parameter names should match base declaration and other partial definitions
         {
             optionbuilder.UseSqlite("Data Source = Quotes.db");
             //optionbuilder.UseSqlite(ConfigurationManager.ConnectionStrings["Default"].ConnectionString);
         }
         public virtual DbSet<Quote> Quotes { get; set; }
+        public virtual DbSet<Setting> Settings { get; set; }
     }
 }

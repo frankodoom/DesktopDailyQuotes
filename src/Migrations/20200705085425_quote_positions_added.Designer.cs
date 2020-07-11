@@ -3,14 +3,16 @@ using System;
 using DailyQuotes.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DailyQuotes.Migrations
 {
     [DbContext(typeof(QuoteContext))]
-    partial class QuoteContextModelSnapshot : ModelSnapshot
+    [Migration("20200705085425_quote_positions_added")]
+    partial class quote_positions_added
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

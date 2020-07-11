@@ -168,6 +168,7 @@
     <Compile Include="DailyQuotesApplicationContext.cs" />
     <Compile Include="Data\Dto\QuoteDto.cs" />
     <Compile Include="Data\Model\Quote.cs" />
+    <Compile Include="Data\Model\Setting.cs" />
     <Compile Include="Data\QuoteContext.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
@@ -178,6 +179,10 @@
     <Compile Include="Migrations\20200704200915_initial.cs" />
     <Compile Include="Migrations\20200704200915_initial.designer.cs">
       <DependentUpon>20200704200915_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20200705085425_quote_positions_added.cs" />
+    <Compile Include="Migrations\20200705085425_quote_positions_added.designer.cs">
+      <DependentUpon>20200705085425_quote_positions_added.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\QuoteContextModelSnapshot.cs" />
     <Compile Include="Program.cs" />
@@ -220,6 +225,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include=".editorconfig" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

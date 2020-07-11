@@ -61,7 +61,7 @@ namespace DailyQuotes {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to © {year} By Open Source Team.
+        ///   Looks up a localized string similar to © {year} By Daily Quotes.
         /// </summary>
         internal static string about {
             get {
